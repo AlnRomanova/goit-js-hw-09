@@ -15,7 +15,6 @@ const options = {
   defaultDate: new Date(),
   minuteIncrement: 1,
   onClose(selectedDates) {
-   console.log(selectedDates[0])
 
    if(selectedDates[0] > Date.now() ) {
     btnStartTimer.disabled = false;
@@ -43,8 +42,6 @@ const timer = {
      }
 
      const {days, hours, minutes, seconds} = this.convertMs(ms);
-
-     console.log({days, hours, minutes, seconds})
 
      rootSelector.querySelector('[data-days]').textContent = this.addLeadingZero(days);
      rootSelector.querySelector('[data-hours]').textContent = this.addLeadingZero(hours);
