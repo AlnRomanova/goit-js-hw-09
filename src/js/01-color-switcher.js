@@ -1,6 +1,7 @@
 const bodyElColor = document.body;
 const colorBtnStart = document.querySelector('[data-start]');
 const colorBtnStop = document.querySelector('[data-stop]');
+colorBtnStop.disabled = true;
 
 let timerId = null;
 
